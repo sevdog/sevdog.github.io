@@ -21,21 +21,49 @@
 	<section class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>My projects</h2>
-				<ul class="list-unstyled">
-					<li role="presentation">
-						<a href="./projects/rspls/index.html">RSPLS</a>
-						<a title="view on github" class="btn btn-info btn-sm" href="https://github.com/sevdog/rspls/"><i class="fa fa-github"></i></a>
-					</li>
-					<li role="presentation">
-						<a href="./projects/minefield/index.html">Mine Field</a>
-						<a  title="view on github" class="btn btn-info btn-sm" href="https://github.com/sevdog/minefield/"><i class="fa fa-github"></i></a>
-					</li>
-				</ul>
+				<h2>My projects<br><small>this are the projects on which I'm spending my free time</small></h2>
+				<div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">RSPLS</h4>
+                            </div>
+                            <div class="panel-body" style="height:190px">
+                                Inspired by an episode of <b>Big Bang Theory</b>, the Rock-Scissor-Paper-Lizard-Spock game!<br>
+                                The CPU controlled foe can follow three different playing tactics.<br>
+                                If you prefer to play the classi Rock-Scissor-Paper you can enable only classic signs.
+                            </div>
+                            <div class="panel-footer text-right">
+                                <a class="btn btn-link" title="play" href="./projects/rspls/index.html"><i class="fa fa-play"></i></a>
+                                <a class="btn btn-link" title="github project" href="https://github.com/sevdog/rspls/"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Mine Field</h4>
+                            </div>
+                            <div class="panel-body" style="height:190px">
+                                One of the most classic Windows game.<br>
+                                A simple implementation of a 10x10 minefield.
+                            </div>
+                            <div class="panel-footer text-right">
+                                <a class="btn btn-link" title="play" href="./projects/minefield/index.html"><i class="fa fa-play"></i></a>
+                                <a class="btn btn-link" title="github project" href="https://github.com/sevdog/minefield/"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
 			</div>
 		</div>
-	</header>
-	
+    </section>
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           $('[title]').tooltip();
+        });
+    </script>
 </body>
 </html>
