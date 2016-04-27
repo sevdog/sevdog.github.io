@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="bugture, feature, bug">
+    <title>Bugture definition</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.css">
+    <style type="text/css">
+        p {
+            text-align: justify;
+            width: 100%;
+            margin-top:0;
+            margin-bottom:1em;
+        }
+        .main  {
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body layoyt-fill layout="column" ng-app="sd.bugture">
+    <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Bug" md-no-ink md-no-focus-style>
+                <md-icon md-font-set="fa" md-font-icon="fa-bug" style="font-size:25px;height:25px"></md-icon>
+            </md-button>
+            <h2>The <b>bugture</b> term origins</h2>
+        </div>
+    </md-toolbar>
+    <md-content flex layout="column" layout-padding layout-align="top center">
+        <div layout="row" flex="none" layout-padding layout-align="center">
+            <md-whiteframe flex="100" class="main md-whiteframe-8dp" md-colors="::{backgroundColor: 'default-primary-200'}"
+                layout="row"  layout-xs="column" layout-align="center center">
+                <div md-colors="::{background: 'default-accent'}" style="height:80px; width:80px;border-radius: 50%;text-align: center" flex="none">
+                    <md-icon md-font-set="fa" md-font-icon="fa-bug"></md-icon>
+                </div>
+                <b flex>It's not a bug, it's a feature!</b>
+                <div md-colors="::{background: 'default-accent'}" style="height:80px;width:80px;border-radius: 50%;text-align: center" flex="none">
+                    <md-icon md-font-set="fa" md-font-icon="fa-black-tie"></md-icon>
+                </div>
+            </md-whiteframe>
+        </div>
+        <p>
+            How many times, as a developer or as a normal user, have you been told such a phrase
+            by the support team while you are struggling with software?<br>
+            As most developers know, programming well an make good software is not as easy as it seems. There are tons of
+            things that you must take in account in order to make a good tool/platform/service, one of the most critical
+            is the user experience. However not every software producer can guess what users will do with their product,
+            and <i>sometimes</i> programmers are a kind lazy and quite protective toward their creation <small>(some developers
+            always write very good code and make very good features)</small>.<br><br>
+            This causes the most common misunderstanding between developers and user. This can lead to two different scenarios:<br>
+            or developers will close the discussion with the user, telling something like <q>as designed</q> or <q>won't fix</q>; or
+            the customer will force the developers to change the software to meet their expectations, this mainly occurs for
+            custom made software.
+        </p>
+        <p>
+            The web is full of meme and other stuff with the slogan <q><b>It's not a bug, it's a feature!</b></q> on, you can just
+            search the phrase with Google or Bing or Yahoo and see how many things they will find out. However there was
+            no word for defining this situation till now.<br>
+            In one of my jobs I have been in a situation where this happened to me, it was very frustrating. But then, to
+            have a laugh with my colleagues I said: <q><b>look what a bugture!</b></q>. They have not understood on the fly,
+            but after a while and looking at what I was working on the term was so clear.
+        </p>
+        <p>
+            I tried searching the term on the web, but sembraca that no one had ever used. So let me try to spread it,
+            here is the definition:
+        </p>
+        <div layout="row" flex="none" layout-align="center">
+            <md-whiteframe flex-xs="100" flex-sm="80" flex="35" class="md-whiteframe-8dp" md-colors="::{backgroundColor: 'default-accent-500'}" style="padding:10px">
+                <md-icon md-font-set="fa" md-font-icon="fa-quote-left"></md-icon>
+                <blockquote style="margin: 0 30px;text-align: justify">
+                    <b>Bugture:</b>
+                    something in a software (tool, platform, service or framework) that is perceived as a
+                    <i>bug</i> by the users but was (and probably is) intended as a <i>feature</i> by the developers.
+                </blockquote>
+                <md-icon md-font-set="fa" md-font-icon="fa-quote-right" style="float:right"></md-icon>
+            </md-whiteframe>
+        </div>
+    </md-content>
+    <footer style="text-align: right; padding:5px; font-size:10px">
+        &copy; sevdog 27-04-2016
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            angular.module('sd.bugture', ['ngMaterial', 'ngAnimate', 'ngAria']);
+        })();
+    </script>
+</body>
+</html>
